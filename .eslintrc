@@ -1,6 +1,6 @@
 {
-  extends: "eslint:recommended",
-  env: {
-    node: true,
+  "extends": "eslint:recommended",
+  "env": {
+    "node": true
   }
 }
