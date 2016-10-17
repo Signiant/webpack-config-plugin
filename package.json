@@ -1,14 +1,15 @@
 {
-  "name": "webpack-config-plugin",
+  "name": "webpack-node-config-plugin",
   "version": "0.5.0",
-  "description": "Configuration plugin (in the style of node-config) for webpack.",
+  "description": "Configuration plugin (using node-config) for webpack.",
   "main": "lib/config-plugin.js",
   "peerDependencies": {
-    "webpack": ">=1.4.0"
+    "webpack": ">=1.4.0",
+    "node-config": ">=0.0.2"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mehcode/webpack-config-plugin.git"
+    "url": "git://github.com/Signiant/webpack-config-plugin"
   },
   "keywords": [
     "webpack",
@@ -20,6 +21,10 @@
     "email": "leckey.ryan@gmail.com",
     "url": "https://github.com/mehcode"
   },
+  "contributors": [{
+    "name": "Peter Hodgkinson",
+    "email": "pdhodgkinson@gmail.com"
+  }],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mehcode/webpack-config-plugin/issues"

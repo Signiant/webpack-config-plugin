@@ -1,10 +1,10 @@
 # webpack-config-plugin
-Configuration plugin (in the style of node-config) for webpack.
+Configuration plugin (using [node-config](https://github.com/lorenwest/node-config)) for webpack.
 
 ## Install
 
 ```
-npm install --save-dev webpack-config-plugin
+npm install --save-dev Signiant/webpack-config-plugin
 ```
 
 ## Configuration
@@ -19,8 +19,6 @@ module.exports = {
   plugins: [
     // [...]
     new ConfigPlugin({
-      // Configuration directory
-      dir: path.join(__dirname, "config")
     })
   ]
 }
@@ -29,5 +27,5 @@ module.exports = {
 ## Usage
 
 When the plugin has been configured it enables a faux-module `config` which
-is a merge between a default configuration, an environment-specific
-configuration, and a local configuration.
+uses `node-config` to load a merged configuration file based on environment variables,
+as described [here](https://github.com/lorenwest/node-config/wiki/Configuration-Files)
