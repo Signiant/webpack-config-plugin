@@ -5,7 +5,7 @@
   "main": "lib/config-plugin.js",
   "peerDependencies": {
     "webpack": ">=1.4.0",
-    "node-config": ">=0.0.2"
+    "config": ">=0.2.3"
   },
   "repository": {
     "type": "git",
